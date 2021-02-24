@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="aquamarine.css">
+  <link rel="stylesheet" href="button.css">
+  <style>
+    /* Style the Image Used to Trigger the Modal */
+    #myImg {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #myImg:hover {
+      opacity: 0.7;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      padding-top: 100px;
+      /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.9);
+      /* Black w/ opacity */
+    }
+
+    /* Modal Content (Image) */
+    .modal-content {
+      margin: auto;
+      display: block;
+      height: 70%;
+      width: 70%;
+    }
+
+    /* Caption of Modal Image (Image Text) - Same Width as the Image */
+    #caption {
+      margin: auto;
+      display: block;
+      width: 100%;
+      text-align: center;
+      color: black;
+      padding: 10px 0;
+      height: 150px;
+    }
+
+    /* Add Animation - Zoom in the Modal */
+    .modal-content,
+    #caption {
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1.5)
+      }
+    }
+
+    /* The Close Button */
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px) {
+      .modal-content {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body class="">
+  <div class="text-center py-0">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-12">
+          <a href="https://www.eshgroup.co.uk/about-esh-construction/new-build-and-refurbishment/"><img
+              class="d-block rounded-0 img-fluid py-0 pt-0 float-left" src="assets/styleguide/together-housing.png"
+              alt="Card image cap" width="250"></a>
+          <div class="row" style="width: 100%;">
+            <div class="col-md-12 shadow-none">
+              <a href="Home.html"><button class="btn draw-border">Home</button></a>
+              <a href="Proposals.html"><button class="btn draw-border">Proposals</button></a>
+              <a href="Feedback.html"><button class="btn draw-border">Feedback</button></a>
+              <a href="assets/styleguide/Campsall Planning Layout 19.02.21.pdf" download="Campsall plans"><button class="btn draw-border">Download</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-0">
+      <div class="container">
+        <div class="row" style="width: 100%;">
+          <div class="text-center mx-auto col-md-12">
+            <h1>Proposed Plans &amp; Elevations</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 p-3"> <img class="img-fluid d-block" src="assets/styleguide/Side.jpeg" width="500">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="text-center">Typical Elevation</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-3"> <img class="img-fluid d-block" src="assets/styleguide/Side.jpeg" width="500">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="text-center">3 Bedroom Floorplan</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-3"> <img class="d-block img-fluid" src="assets/styleguide/IMG_1935.jpeg" width="500">
+            <h4 class="text-center">2 Bedroom Floorplan</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 p-3"> <img id="myImg" class="img-fluid d-block" src="assets/styleguide/Layout.png">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption">pumpkin</div>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+        </div>
+        <div class="py-5" style="background-color: #99004c">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 w-100">
+                <h1 class="mb-3" style="color: white; text-align: left">
+                  <b>Our Proposals</b>
+                </h1>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="text-justify lead w-100" style="color: white;">Insert text describing project and
+                      objectives
+                      of
+                      the development.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-0">
+          <div class="container">
+            <div class="row">
+              <a href="https://www.eshgroup.co.uk/about-esh-construction/new-build-and-refurbishment/">
+                <div class="col-md-12 p-0"> <img class="d-block img-fluid mx-auto"
+                    src="assets/styleguide/Esh-Living.png" width="350"> </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="py-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center"> <i class="d-block fa fa-stop-circle mb-3 text-muted fa-3x"></i>
+                <p>Email: info@devcom.land DevCom LTD is a company registered in the UK(10495364). Registered at:
+                  Orchard
+                  View, Hay Green, Sour Lane, Fishlake. Doncaster DN7 5JY. VAT registration number: 260297700</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <p class="mb-0"><i>© 2021 DevCom Ltd</i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          // Get the modal
+          var modal = document.getElementById("myModal");
+
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img = document.getElementById("myImg");
+          var modalImg = document.getElementById("img01");
+          var captionText = document.getElementById("caption");
+          img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+          }
+
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function () {
+            modal.style.display = "none";
+          }
+        </script>
+</body>
+
+</html>
